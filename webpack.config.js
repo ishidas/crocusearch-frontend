@@ -1,9 +1,8 @@
 'use strict';
 // const webpack = require('webpack');
 // const debug = process.env.NODE_ENV !== "production";
-
 module.exports = {
-  entry: 'entry.js',
+  entry: `${__dirname}/app/entry.js`,
   module: {
     loaders: [
       {
@@ -18,7 +17,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/build',
+    path: `${__dirname}/build`,
     filename: 'bundle.js'
   }
 };//end of module.exports
